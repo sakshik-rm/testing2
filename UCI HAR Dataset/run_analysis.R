@@ -33,5 +33,5 @@ colnames(merged_a) <- newnames
 #5
 tidied <- merged_a
 names(tidied) <- make.unique(names(tidied))
-tidied %>% group_by(Activity) %>% summarise_all(mean)
+tidied <- tidied %>% group_by(Activity) %>% summarise_all(mean)
 
